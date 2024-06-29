@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
 .extensions-container {
-    font-family: sans-serif;
-    display: grid;
-    max-width: 2000px;
-    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .ext-text {
+    margin: auto;
     text-align: center;
     max-width: 550px;
 }
@@ -15,11 +19,11 @@
 }
 
 .extensions-inner {
-    position: relative;
-    align-self: center;
-    margin-top: 50px;
-    margin-left: 30%;
-    max-width:1200px;
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .extensions-inner p {
@@ -28,19 +32,18 @@
 }
 
 .logo {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .dots{
     max-width:300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .chrome,
 .firefox,
 .opera {
-    position: absolute;
     max-width: 300px;
     max-height: 800px;
     box-sizing: border-box;
@@ -48,25 +51,51 @@
     font-size: 10;
     text-align: center;
     box-shadow: 0px 8px 5px rgba(199, 199, 199, 0.418), 
-        -5px 8px 5px rgba(199, 199, 199, 0.418), 5px 8px 5px rgba(199, 199, 199, 0.418);
+        -5px 8px 5px rgba(199, 199, 199, 0.418), 
+        5px 8px 5px rgba(199, 199, 199, 0.418);
 }
 
-.firefox {
-    float:unset;    
-    margin-left: 30%;
-}
-
-.opera {
-    float:unset;
-    margin-left: 60%;
-}
 .install-btn {
     max-width: 200px;
     max-height: 60px;
-    padding: 15px;
+    padding: 10px;
     background-color: rgba(0, 0, 255, 0.671);
     border-radius: 5%;
     color: white;
     font-size: 15px;
-    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-text {
+    text-align: center;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 200px;
+}
+
+.faq-question {
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    border:1px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: white;
+    text-align: left;
+}
+.faq-answer  {
+    display: none;
+    width: 400px;
+    color: rgb(167, 173, 173);
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+    
 }
