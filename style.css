@@ -77,7 +77,7 @@
  }
 
  .hero-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -88,22 +88,30 @@
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
+    width: 400px;
  }
 
 .hero-btn{
     background-color: hsl(231, 69%, 60%);
-    color: #fff;
+    color:#fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     margin-right: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
 }
 
 .hero-img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 /* Bookmark Manager end */
@@ -117,33 +125,70 @@
     justify-content: center;
 }
 
-.features-section h2 {
-    font-size: 36px;
+.features-title {
+    font-size: 40px;
     font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.features-section p {
+.features-content {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 40px;
+    width: 600px;
+    color: #777;
 }
 
 .features-tabs {
     display: flex;
     justify-content: center;
+    font-size: 18px;
     gap: 50px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
-.features-tabs {
+.features-tab {
+    cursor: pointer;
+}
+
+.features-tab.active {
+    border-bottom: 3px solid orange;
+}
+
+/* .features-tabs .tab-item {
     font-size: 18px;
     font-weight: 500;
-    color: #777;
+    color: #111010;
     padding-bottom: 10px;
     position: relative;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+.features-tabs .tab-item.active {
+    color: hsl(231, 69%, 60%); 
+}
+
+.features-tabs .tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(231, 69%, 60%); 
+    transition: width 0.3s ease;
+} */
+
+/* .features-tabs {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111010;
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+} */
 
 
 /* Features end*/
@@ -151,31 +196,69 @@
 /* On click */
 
 .onclick {
+    padding-left: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
  }
 
-.onclick h2 {
-    font-size: 36px;
+.onclick-title {
+    color: #070707;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.onclick p {
+.onclick-content {
     color: rgb(167, 173, 173);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
+    width: 500px;
+}
+
+.onclick-btn {
+    background-color: hsl(231, 69%, 60%);
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+.onclick-btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+.onclick-bg {
+    background-color:hsl(231, 69%, 60%) ;
+    position: absolute;
+    z-index: 0;
+    width: 18%;
+    height: 25%;
+    bottom: -260px;
+    left: 470px;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
 }
 
  .onclick-img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    position: relative;
+    z-index: 1;
+    
 }
 
 /* On click end */
