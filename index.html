@@ -52,15 +52,18 @@
         <!--Features-->
             <section class="features">
                 <div class="container">
-                    <h2>Features</h2>
-                    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+                    <h2 class="features-title">Features</h2>
+                    <p class="features-content">Our aim is to make it quick and easy for you to access your favourite websites. 
                         Your bookmarks sync between your devices so you can access them on the go.
                     </p>
 
                     <div class="features-tabs">
-                        <p class="features-tab">Simple Bookmarking</p>
-                        <p class="features-tab">Speedy Searching</p>
-                        <p class="features-tab">Easy Sharing</p>
+                        <p class="features-tab" data-tab="simple" id="simple">Simple Bookmarking</p>
+                        <p class="features-tab" data-tab="speedy" id="speedy">Speedy Searching</p>
+                        <p class="features-tab" data-tab="easy" id="easy">Easy Sharing</p>
+                    </div>
+                    <div>
+                        <hr>
                     </div>
                 </div>
             </section>
@@ -69,13 +72,16 @@
         <!--On click-->
         <section class="onclick">
             <div>
+                <div class="onclick-bg">
+                </div>
                 <img class="onclick-img" src="Images/illustration-features-tab-1.svg" alt="illustration-features">
             </div>
-            <div class="onclick-content">
-                <h2>Bookmark in one click</h2>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            <div>
+                <h2 class="onclick-title">Bookmark in one click</h2>
+                <p class="onclick-content">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                     gives you complete control over how you manage your favourite sites.
                 </p>
+                <button class="onclick-btn">More Info</button>
             </div>
         </section>
         <!-- /.On click-->
