@@ -5,178 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     
-    <title>Frontend Mentor | Bookmark landing pag</title>
+    <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <a href="#">
-                    <img src="Images/logo-bookmark.svg" alt="Bookmark logo">
-                </a>
-
-                <nav class="nav">
-                    <a href="#" class="nav-link">Features</a>
-                    <a href="#" class="nav-link">Pricing</a>
-                    <a href="#" class="nav-link">Contact</a>
-
-                    <button class="header-btn-login">Login</button>
-                </nav> <!-- /.nav-->
-            </div>
-        </div>
-    </header>
-    <!-- /.Header-->
-
-    <!--Bookmark Manager-->
-    <section class="hero">
-        <div class="container">
-            <h2> A Simple Bookmark Manager</h2>
-            <p>A clean and simple interface to organize your favourite websites. Open a new 
-                browser tab and see your sites load instantly. Try it for free.
-            </p>
-
-            <button>Get it on Chrome</button>
-            <button>Get it on Firefox</button>
-            <!-- <a href="#" class="btn">Get it on Chrome</a>
-            <a href="#" class="btn">Get it on Firefox</a> -->
-        </div>
-        <div>
-            <img src="Images/illustration-hero.svg" alt="">
-        </div>
-    </section>
-    <!-- /.Bookmark Manager-->
-
-    <!--Features-->
-        <section>
+    <main class="container">
+        <!--Header-->
+        <header class="header">
             <div class="container">
-                <h2>Features</h2>
-                <p>Our aim is to make it quick and easy for you to access your favourite websites. 
-                    Your bookmarks sync between your devices so you can access them on the go.
+                <div class="header-inner">
+                    <a href="#">
+                        <img src="Images/logo-bookmark.svg" alt="Bookmark logo">
+                    </a>
+
+                    <nav class="nav">
+                        <a href="#" class="nav-link">FEATURES</a>
+                        <a href="#" class="nav-link">PRICING</a>
+                        <a href="#" class="nav-link">CONTACT</a>
+
+                        <button class="header-btn-login">LOGIN</button>
+                    </nav> <!-- /.nav-->
+                </div>
+            </div>
+        </header>
+        <!-- /.Header-->
+
+        <!--Bookmark Manager-->
+        <section class="hero">
+            <div>
+                <h2 class="hero-title"> A Simple Bookmark Manager</h2>
+                <p class="hero-content">A clean and simple interface to organize your favourite websites. Open a new 
+                    browser tab and see your sites load instantly. Try it for free.
                 </p>
 
-                <div>
-                    <p>Simple Bookmarking</p>
-                    <p>Speedy Searching</p>
-                    <p>Easy Sharing</p>
+                <button class="hero-btn">Get it on Chrome</button>
+                <button class="hero-btn">Get it on Firefox</button>
+                <!-- <a href="#" class="btn">Get it on Chrome</a>
+                <a href="#" class="btn">Get it on Firefox</a> -->
+            </div>
+            <div>
+                <img class="hero-img" src="Images/illustration-hero.svg" alt="Illustration-hero">
+            </div>
+        </section>
+        <!-- /.Bookmark Manager-->
+
+        <!--Features-->
+            <section class="features">
+                <div class="container">
+                    <h2>Features</h2>
+                    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+                        Your bookmarks sync between your devices so you can access them on the go.
+                    </p>
+
+                    <div class="features-tabs">
+                        <p class="features-tab">Simple Bookmarking</p>
+                        <p class="features-tab">Speedy Searching</p>
+                        <p class="features-tab">Easy Sharing</p>
+                    </div>
+                </div>
+            </section>
+        <!-- /.Features-->
+
+        <!--On click-->
+        <section class="onclick">
+            <div>
+                <img class="onclick-img" src="Images/illustration-features-tab-1.svg" alt="illustration-features">
+            </div>
+            <div class="onclick-content">
+                <h2>Bookmark in one click</h2>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                    gives you complete control over how you manage your favourite sites.
+                </p>
+            </div>
+        </section>
+        <!-- /.On click-->
+
+
+        <!--Extensions-->
+        <section>
+            <div class="extensions-container">
+                <div class="ext-text">
+                    <h1> Download the extension</h1>
+                    <p>
+                        We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like
+                        us to prioritize.
+                    </p>
+                </div>
+            </div>    
+            <div>
+                <div class="extensions-inner">
+                    <div class="chrome">
+                        <img class="logo" src="Images\logo-chrome.svg">
+                        <h1>
+                            Add to chrome
+                        </h1>
+                        <p>
+                            Minimum version 62
+                        </p>
+                        <img class="dots" src="Images\bg-dots.svg">
+                        <button class="install-btn"> Add & Install Extension</button>
+                    </div>
+                    <div class="firefox">
+                        <img class="logo" src="Images\logo-firefox.svg">
+                        <h1>
+                            Add to Firefox
+                        </h1>
+                        <p>
+                            Minimum version 55
+                        </p>
+                        <img class="dots" src="Images\bg-dots.svg">
+                        <button class="install-btn"> Add & Install Extension</button>
+                    </div>
+                    <div class="opera">
+                        <img class="logo" src="Images\logo-opera.svg">
+                        <h1>
+                            Add to Opera
+                        </h1>
+                        <p>
+                            Minimum version 46
+                        </p>
+                        <img class="dots" src="Images\bg-dots.svg">
+                        <button class="install-btn"> Add & Install Extension</button>
+                    </div>
                 </div>
             </div>
         </section>
-    <!-- /.Features-->
+        <!--Extensions end-->
+        <!--FAQ-->
+        <section>
+            <div class="faq-container">
+                <div class="faq-text">
+                    <h1>Frequently Asked Questions</h1>
+                    <p> Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is Bookmark?</button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How can I request a new browser?</button>
+                    <div class="faq-answer">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Is there a mobile app?</button>
+                    <div class="faq-answer">
+                        <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What about other Chromium browsers?</button>
+                    <div class="faq-answer">
+                        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    </div>
+                </div>
+                
+                    <button>More Info</button>
+                </div>
+            </div>
+        </section>
+        <!--FAQ end-->
+        <!--Subscribe-->
 
-    <!--On click-->
-    <section>
-        <div>
-            <img src="Images/illustration-features-tab-1.svg" alt="">
-        </div>
-        <div>
-            <h2>Bookmark in one click</h2>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                gives you complete control over how you manage your favourite sites.
-            </p>
-        </div>
-    </section>
-    <!-- /.On click-->
+        <!--Subscribe End-->
 
-
-    <!--Extensions-->
-    <section>
-        <div class="extensions-container">
-            <div class="ext-text">
-                <h1> Download the extension</h1>
-                <p>
-                    We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like
-                    us to prioritize.
-                </p>
-            </div>
-        </div>    
-        <div>
-            <div class="extensions-inner">
-                <div class="chrome">
-                    <img class="logo" src="Images\logo-chrome.svg">
-                    <h1>
-                        Add to chrome
-                    </h1>
-                    <p>
-                        Minimum version 62
-                    </p>
-                    <img class="dots" src="Images\bg-dots.svg">
-                    <button class="install-btn"> Add & Install Extension</button>
-                </div>
-                <div class="firefox">
-                    <img class="logo" src="Images\logo-firefox.svg">
-                    <h1>
-                        Add to Firefox
-                    </h1>
-                    <p>
-                        Minimum version 55
-                    </p>
-                    <img class="dots" src="Images\bg-dots.svg">
-                    <button class="install-btn"> Add & Install Extension</button>
-                </div>
-                <div class="opera">
-                    <img class="logo" src="Images\logo-opera.svg">
-                    <h1>
-                        Add to Opera
-                    </h1>
-                    <p>
-                        Minimum version 46
-                    </p>
-                    <img class="dots" src="Images\bg-dots.svg">
-                    <button class="install-btn"> Add & Install Extension</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Extensions end-->
-    <!--FAQ-->
-    <section>
-        <div class="faq-container">
-            <div class="faq-text">
-                <h1>Frequently Asked Questions</h1>
-                <p> Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">What is Bookmark?</button>
-                <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">How can I request a new browser?</button>
-                <div class="faq-answer">
-                    <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">Is there a mobile app?</button>
-                <div class="faq-answer">
-                    <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">What about other Chromium browsers?</button>
-                <div class="faq-answer">
-                    <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
-                </div>
-            </div>
-            
-                <button>More Info</button>
-            </div>
-        </div>
-    </section>
-    <!--FAQ end-->
-    <!--Subscribe-->
-
-    <!--Subscribe End-->
-
-
+    </main>
     <script src="index.js"></script>
+
 </body>
 
 </html>

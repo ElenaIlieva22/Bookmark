@@ -23,7 +23,11 @@
  }
 
 .nav {
+    
+    display: flex;
+    align-items: center;
     gap: 45px;
+
 }
 
 .nav-link {
@@ -31,6 +35,13 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 32px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: hsl(0, 94%, 66%);
 }
 
  .header-btn-login {
@@ -38,30 +49,136 @@
     font-size: 18px;
     border-radius: 5px;
     text-decoration: none;
-
-    color: white;
+    color: #fff;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
  }
 
-/* Header */
+ .header-btn-login:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%) ;
+ }
+/* Header end*/
 
 /* Bookmark Manager */
-
  .hero {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
  }
 
-/* Bookmark Manager */
+ .hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+ }
+
+ .hero-content {
+    color: rgb(167, 173, 173);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+ }
+
+.hero-btn{
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+/* Bookmark Manager end */
+
 
 /* Features */
+.features {
+    padding: 50px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.features-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.features-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.features-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.features-tabs {
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
 
 
+/* Features end*/
 
-/* Features */
+/* On click */
+
+.onclick {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+ }
+
+.onclick h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.onclick p {
+    color: rgb(167, 173, 173);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+ .onclick-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* On click end */
 
 .extensions-container {
     max-width: 1200px;
