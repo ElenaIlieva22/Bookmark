@@ -3,11 +3,9 @@
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
  /* Header */
@@ -23,11 +21,9 @@
  }
 
 .nav {
-    
     display: flex;
     align-items: center;
     gap: 45px;
-
 }
 
 .nav-link {
@@ -62,7 +58,7 @@
     background-color: #fff;
     transform: scale(1.05);
     color: hsl(0, 94%, 66%);
-    border: 2px solid hsl(0, 94%, 66%) ;
+    border: 2px solid hsl(0, 94%, 66%);
  }
 /* Header end*/
 
@@ -74,7 +70,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
- }
+ } 
 
  .hero-title {
     font-size: 40px;
@@ -110,9 +106,39 @@
     border: 2px solid hsl(231, 69%, 60%);
 }
 
+.hero-picpart {
+    position: relative;
+    z-index: 0;
+    width: 50%;
+    height: 600px;
+}
+
+.hero div:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bg {
+    background-color: hsl(231, 69%, 60%);
+    z-index: 0;
+    height: 300px;
+    width: 600px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    position: absolute;
+    top: 70%; 
+    transform: translateY(-50%); 
+    right: -200px;
+}
+
 .hero-img {
     max-width: 80%;
     height: auto;
+    z-index: 1; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    margin-left: 50px; 
 }
 /* Bookmark Manager end */
 
@@ -123,6 +149,11 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 100px;
+}
+
+.tabs {
+    position: relative;
 }
 
 .features-title {
@@ -145,86 +176,52 @@
     justify-content: center;
     font-size: 18px;
     gap: 50px;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .features-tab {
     cursor: pointer;
 }
 
-.features-tab.active {
-    border-bottom: 3px solid orange;
-}
-
-/* .features-tabs .tab-item {
-    font-size: 18px;
-    font-weight: 500;
-    color: #111010;
-    padding-bottom: 10px;
-    position: relative;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.features-tabs .tab-item.active {
-    color: hsl(231, 69%, 60%); 
-}
-
-.features-tabs .tab-item.active::after {
-    content: '';
+.divider {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: hsl(231, 69%, 60%); 
-    transition: width 0.3s ease;
-} */
-
-/* .features-tabs {
-    font-size: 18px;
-    font-weight: 500;
-    color: #111010;
-    padding-bottom: 10px;
-    position: relative;
-    cursor: pointer;
-} */
-
-
+    height: 3px;
+    background-color: orange;
+    transition: left 0.3s ease, width 0.3s ease;
+}
 /* Features end*/
 
 /* On click */
 
 .onclick {
-    padding-left: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 100px;
+    display: none;
+ }
+
+.onclick.active {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
- }
-
-.onclick-title {
+  }
+  
+  .onclick-title {
     color: #070707;
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
-}
-
-.onclick-content {
+  }
+  
+  .onclick-content {
     color: rgb(167, 173, 173);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
     width: 500px;
-}
-
-.onclick-btn {
+  }
+  
+  .onclick-btn {
     background-color: hsl(231, 69%, 60%);
-    color:#fff;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -232,35 +229,36 @@
     cursor: pointer;
     margin-right: 15px;
     transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
-}
-
-.onclick-btn:hover {
+  }
+  
+  .onclick-btn:hover {
     background-color: #fff;
     transform: scale(1.05);
     color: hsl(231, 69%, 60%);
     border: 2px solid hsl(231, 69%, 60%);
-}
-
-.onclick-bg {
-    background-color:hsl(231, 69%, 60%) ;
-    position: absolute;
-    z-index: 0;
-    width: 18%;
-    height: 25%;
-    bottom: -260px;
-    left: 470px;
-    border-top-right-radius: 35%;
-    border-bottom-right-radius: 35%;
-}
-
- .onclick-img {
-    max-width: 80%;
-    height: auto;
+  }
+  
+  .onclick div:first-child {
     position: relative;
     z-index: 1;
-    
-}
-
+  }
+  
+  .onclick-bg {
+    background-color: hsl(231, 69%, 60%);
+    z-index: 0;
+    height: 300px;
+    width: 600px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+  
+  .onclick-img {
+    z-index: 1;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    max-width: 80%;
+  }
 /* On click end */
 
 .extensions-container {

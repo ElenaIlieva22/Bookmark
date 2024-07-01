@@ -1,18 +1,32 @@
-const featurestabs = document.getElementsByClassName ('features-tab');
-const tabs = [...featurestabs];
+const divider = document.querySelector(".divider");
+const featurestabs = document.querySelectorAll(".features-tab");
+const contents = document.querySelectorAll(".onclick");
 
-tabs.forEach ((tab) => {
-    tab.addEventListener('click'  , (e) => {
-        console.log(e)
-        tabs.forEach(item => item.classList.remove('active'));
-        console.log(this);
-        // this.classList.add("active");
-        const element = document.getElementById (e.target.id);
-        element.classList.add("active");
-        
-    })
-})
+const firstTab = featurestabs[0];
 
+function updateUnderline(tab) {
+  const rect = tab.getBoundingClientRect();
+  const containerRect = tab.parentElement.getBoundingClientRect();
+  divider.style.width = `${rect.width}px`;
+  divider.style.left = `${rect.left - containerRect.left}px`;
+}
+
+updateUnderline(firstTab);
+
+featurestabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    featurestabs.forEach((item) => item.classList.remove("active"));
+    contents.forEach((content) => content.classList.remove("active"));
+
+    const id = e.target.id;
+
+    const tabItem = document.getElementById(id);
+    updateUnderline(tabItem);
+
+    const tabContent = document.getElementById(`tab-${id}`);
+    tabContent.classList.add("active");
+  });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {

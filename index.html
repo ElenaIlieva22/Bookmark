@@ -12,20 +12,18 @@
     <main class="container">
         <!--Header-->
         <header class="header">
-            <div class="container">
-                <div class="header-inner">
-                    <a href="#">
-                        <img src="Images/logo-bookmark.svg" alt="Bookmark logo">
-                    </a>
+            <div class="header-inner">
+                <a href="#">
+                    <img src="Images/logo-bookmark.svg" alt="Bookmark logo">
+                </a>
 
-                    <nav class="nav">
-                        <a href="#" class="nav-link">FEATURES</a>
-                        <a href="#" class="nav-link">PRICING</a>
-                        <a href="#" class="nav-link">CONTACT</a>
+                <nav class="nav">
+                    <a href="#" class="nav-link">FEATURES</a>
+                    <a href="#" class="nav-link">PRICING</a>
+                    <a href="#" class="nav-link">CONTACT</a>
 
-                        <button class="header-btn-login">LOGIN</button>
-                    </nav> <!-- /.nav-->
-                </div>
+                    <button class="header-btn-login">LOGIN</button>
+                </nav> <!-- /.nav-->
             </div>
         </header>
         <!-- /.Header-->
@@ -40,10 +38,10 @@
 
                 <button class="hero-btn">Get it on Chrome</button>
                 <button class="hero-btn">Get it on Firefox</button>
-                <!-- <a href="#" class="btn">Get it on Chrome</a>
-                <a href="#" class="btn">Get it on Firefox</a> -->
             </div>
-            <div>
+            <div class="hero-picpart">
+                <div class="hero-bg">
+                </div>
                 <img class="hero-img" src="Images/illustration-hero.svg" alt="Illustration-hero">
             </div>
         </section>
@@ -57,11 +55,15 @@
                         Your bookmarks sync between your devices so you can access them on the go.
                     </p>
 
-                    <div class="features-tabs">
-                        <p class="features-tab" data-tab="simple" id="simple">Simple Bookmarking</p>
-                        <p class="features-tab" data-tab="speedy" id="speedy">Speedy Searching</p>
-                        <p class="features-tab" data-tab="easy" id="easy">Easy Sharing</p>
-                    </div>
+                    <div class="tabs">
+                        <div class="features-tabs">
+                            <p class="features-tab active" data-tab="simple" id="simple">Simple Bookmarking</p>
+                            <p class="features-tab" data-tab="speedy" id="speedy">Speedy Searching</p>
+                            <p class="features-tab" data-tab="easy" id="easy">Easy Sharing</p>
+                        </div>
+    
+                        <div class="divider"></div>
+                    </div> 
                     <div>
                         <hr>
                     </div>
@@ -69,8 +71,10 @@
             </section>
         <!-- /.Features-->
 
-        <!--On click-->
-        <section class="onclick">
+       <!--On click-->
+
+        <!-- CONTENT OF TAB 1  -->
+        <section class="onclick active" id="tab-simple">
             <div>
                 <div class="onclick-bg">
                 </div>
@@ -80,6 +84,36 @@
                 <h2 class="onclick-title">Bookmark in one click</h2>
                 <p class="onclick-content">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                     gives you complete control over how you manage your favourite sites.
+                </p>
+                <button class="onclick-btn">More Info</button>
+            </div>
+        </section>
+
+        <!-- CONTENT OF TAB 2 -->
+        <section class="onclick" id="tab-speedy">
+            <div >
+                <div class="onclick-bg">
+                </div>
+                <img class="onclick-img" src="Images/illustration-features-tab-2.svg" alt="illustration-features">
+            </div>
+            <div>
+                <h2 class="onclick-title">Intelligent search</h2>
+                <p class="onclick-content">Our powerful search feature will help you find saved sites in no time at all. 
+                    No need to trawl through all of your bookmarks.</p>
+                <button class="onclick-btn">More Info</button>
+            </div>
+        </section>
+
+        <!-- CONTENT OF TAB 3 -->
+        <section class="onclick" id="tab-easy">
+            <div >
+                <div class="onclick-bg">
+                </div>
+                <img class="onclick-img" src="Images/illustration-features-tab-3.svg" alt="illustration-features">
+            </div>
+            <div>
+                <h2 class="onclick-title">Share your bookmarks</h2>
+                <p class="onclick-content"> Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
                 </p>
                 <button class="onclick-btn">More Info</button>
             </div>
