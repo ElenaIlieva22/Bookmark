@@ -194,6 +194,7 @@
 
 .onclick {
     display: none;
+    margin-bottom: 100px;
  }
 
 .onclick.active {
