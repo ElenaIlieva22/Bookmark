@@ -261,21 +261,25 @@
   }
 /* On click end */
 
+/* Extensions */
+
 .extensions-container {
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .ext-text {
-    margin: auto;
-    text-align: center;
-    max-width: 550px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 .ext-text p {
     font-size: large;
     color: rgb(167, 173, 173);
+    max-width: 500px;
 }
 
 .extensions-inner {
@@ -298,14 +302,14 @@
 .dots{
     max-width:300px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
 }
 
 .chrome,
 .firefox,
 .opera {
     max-width: 300px;
-    max-height: 800px;
+    height: 350px;
     box-sizing: border-box;
     border-radius: 5%;
     font-size: 10;
@@ -314,48 +318,176 @@
         -5px 8px 5px rgba(199, 199, 199, 0.418), 
         5px 8px 5px rgba(199, 199, 199, 0.418);
 }
+.firefox {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.opera {
+    margin-top: 80px;
+    margin-left: 30px;
+}
 
 .install-btn {
-    max-width: 200px;
+    max-width: 250px;
     max-height: 60px;
     padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: rgba(0, 0, 255, 0.671);
     border-radius: 5%;
     color: white;
     font-size: 15px;
-    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;  
 }
+
+.install-btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+  }
+
+  /* Extensions End*/
+
+  /* FAQ */
+
+.faq-container {
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-direction: column;
+    
+}
+.faq-container div:nth-last-child(2) {
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
+  }
 
 .faq-text {
     text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.faq-text p {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(167, 173, 173);
+    max-width: 450px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .faq-item {
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 200px;
+    width: 450px;
 }
 
 .faq-question {
-    margin: auto;
-    width: 400px;
+    background-color: #fff;
+    color: #000;
     height: 50px;
-    border:1px;
-    border-style: solid;
+    border-top: 1px solid black;
     border-left: none;
     border-right: none;
     border-bottom: none;
-    background-color: white;
     text-align: left;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+.faq-question:hover {
+    color: orange;
+  }
+
+
 .faq-answer  {
     display: none;
-    width: 400px;
     color: rgb(167, 173, 173);
 }
 
 .faq-item.open .faq-answer {
     display: block;
     
+}
+
+#FAQ-btn{
+    margin: auto;
+}
+
+/* FAQ End*/
+
+/* Subscribe */
+
+.subscribe-container {
+    text-align: center;
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+}
+
+.subscribe-container p {
+    padding-top: 30px;
+}
+
+.subscribe-inner {
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+/* Subscribe End */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 20px;
+    background-color: rgb(35, 43, 77);
+    color: #fff;
+ }
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-footer{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-link-footer {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color 0.3s ease;
+ }
+
+.nav-link-footer:hover {
+    color: hsl(0, 94%, 66%);
+}
+.footer-icon {
+    float: right;
+}
+
+#svg-path {
+    transition: fill 0.3s ease;
+}
+
+#svg-path:hover {
+    fill: hsl(0, 94%, 66%);
 }
