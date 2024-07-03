@@ -391,6 +391,8 @@
 }
 
 .faq-question {
+    display: flex;
+    align-items: center;
     background-color: #fff;
     color: #000;
     height: 50px;
@@ -401,10 +403,21 @@
     text-align: left;
     cursor: pointer;
     transition: color 0.3s ease;
+    justify-content: space-between;
+    
 }
 
+.rotated {
+    transform: rotate(180deg);
+}
+
+.orange {
+    stroke: hsl(0, 94%, 66%);
+}
+
+
 .faq-question:hover {
-    color: orange;
+    color: hsl(0, 94%, 66%);
   }
 
 
@@ -413,9 +426,8 @@
     color: rgb(167, 173, 173);
 }
 
-.faq-item.open .faq-answer {
+.faq-answer-show {
     display: block;
-    
 }
 
 #FAQ-btn{
@@ -430,17 +442,38 @@
     text-align: center;
     background-color: hsl(231, 69%, 60%);
     color: #fff;
-}
-
-.subscribe-container p {
-    padding-top: 30px;
+    padding: 20px;
 }
 
 .subscribe-inner {
     max-width: 400px;
     margin: auto;
-    padding-bottom: 30px;
 }
+
+.error-message {
+    display: none;
+    color: #FA5959;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#error-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#error-icon svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#email-input.error {
+    border: 2px solid #FA5959;
+}
+
+
 
 /* Subscribe End */
 
@@ -457,13 +490,10 @@
 
 .footer-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .nav-footer{
     display: flex;
-    align-items: center;
-    gap: 45px;
 }
 
 .nav-link-footer {
@@ -481,7 +511,10 @@
     color: hsl(0, 94%, 66%);
 }
 .footer-icon {
-    float: right;
+    display: flex;  
+    padding-left: 550px;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 #svg-path {

@@ -29,18 +29,19 @@ featurestabs.forEach((tab) => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var faqQuestions = document.querySelectorAll('.faq-question');
-
-    faqQuestions.forEach(function(question) {
-        question.addEventListener('click', function() {
-            var faqItem = this.parentNode;
-            faqItem.classList.toggle('open');
-        });
-    });
-});
-
-
-
-
-
+function toggleAnswer(button) {
+  let arrowPath = button.querySelector('.arrow path');
+  
+  if (arrowPath) {
+       arrowPath.parentNode.classList.toggle('rotated');
+      
+      if (arrowPath.getAttribute('stroke') === '#5267DF') {
+          arrowPath.setAttribute('stroke', 'hsl(0, 94%, 66%)');
+      } else {
+          arrowPath.setAttribute('stroke', '#5267DF');
+      }
+  }
+  
+  let faqAnswer = button.nextElementSibling;
+  faqAnswer.classList.toggle('faq-answer-show');
+}
