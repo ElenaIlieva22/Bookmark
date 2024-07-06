@@ -60,6 +60,10 @@
     color: hsl(0, 94%, 66%);
     border: 2px solid hsl(0, 94%, 66%);
  }
+
+ .hamburger-menu {
+    display: none;
+ }
 /* Header end*/
 
 /* Bookmark Manager */
@@ -201,6 +205,7 @@
 /* Features end*/
 
 /* On click */
+
 
 .onclick {
     display: none;
@@ -543,68 +548,191 @@
         margin-right: auto;
     }
 
+    /* Header */
     .header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .header-inner {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .nav {
         flex-direction: column;
-        gap: 15px;
-    }
+        gap: 20px;
+    } 
 
-    .nav-link {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
+    .nav-link,
     .header-btn-login {
-        font-size: 14px;
-        padding: 6px 12px;
+        display: none;
+    }
+   
+    .hamburger-menu {
+        display: block;
     }
 
-    .hero {
+    .nac-active {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Header  END */
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-content {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .hero-picpart {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
     }
 
     .hero-bg {
-        background-color: hsl(231, 69%, 60%);
-        z-index: 0;
-        height: 30%;
-        width: 80%;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
+        width: 100%;
+        height: 200px;
+        border-right: 30%;
+        transform: none;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        position: relative;
+        top: -100px;
+        margin-left: 0;
     }
     
-    .hero-img {
-        max-width: 80%;
-        height: auto;
-        z-index: 1; 
-        position: absolute;
-        top: 50%; 
-        margin-left: 100px; 
+    /* Hero END */
+
+    /* Features */
+    .features {
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+
+    .features-title{
+        font-size: 24px;
     }
 
     .features-content {
-       display: flex;
-       flex-direction: column;
-        width: 365px;
-
+       flex-direction: column; 
+       font-size: 14px;
+       margin-bottom: 20px;
     }
 
     .features-tabs {
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 18px; 
+        gap: 10px;
     }
     .features-tab {
         width: 365px;
         margin: auto;    
         border-top: 1px solid black;
     }
+     /* Features END */
+
+    /* On click */
+
+    /* On click  END*/
+
+
+    /* Extensions*/
+
+    .extensions-container {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ext-text {
+        font-size: 20px;
+    }
+
+    .ext-text p {
+        font-size: 14px;
+        max-width: 90%; 
+    }
+
+    .extensions-inner {
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .chrome,
+    .firefox,
+    .opera {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    .firefox,
+    .opera {
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    .install-btn {
+        max-width: 90%; 
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    /* Extensions End*/
+
+    /* FAQ */
+    .faq-container {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .faq-text {
+        padding-top: 50px;
+        font-size: 18px;
+    }
+
+    .faq-text p {
+        font-size: 14px;
+        padding-bottom: 30px;
+        max-width: 90%; 
+
+    .faq-item {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .faq-question {
+        height: 45px;
+        font-size: 14px; 
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    #FAQ-btn {
+        font-size: 14px;
+    }
+    /* FAQ end */
+}
 }

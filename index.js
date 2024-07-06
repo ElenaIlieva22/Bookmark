@@ -45,3 +45,14 @@ function toggleAnswer(button) {
   let faqAnswer = button.nextElementSibling;
   faqAnswer.classList.toggle('faq-answer-show');
 }
+
+// Mobile version
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const nav = document.querySelector('.nav');
+
+  hamburgerMenu.addEventListener('click', function() {
+      nav.classList.toggle('nav-active');
+  });
+});
