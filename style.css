@@ -62,37 +62,6 @@
  }
 /* Header end*/
 
-/* Header mobile */
-
-@media (max-width:375px) {
-    .header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .header-inner {
-        flex-direction: column;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-link {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .header-btn-login  {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-
-}
-
-/* Header mobile end */
-
 /* Bookmark Manager */
  .hero {
     padding-top: 25px;
@@ -162,14 +131,14 @@
     right: -200px;
 }
 
-/* .hero-bg {
+.hero-bg {
     background-color: hsl(231, 69%, 60%);
     z-index: 0;
     height: 300px;
     width: 600px;
     border-top-left-radius: 300px;
     border-bottom-left-radius: 300px;
-} */
+}
 
 .hero-img {
     max-width: 80%;
@@ -181,13 +150,6 @@
     margin-left: 50px; 
 }
 
-/* .hero-img {
-    max-width: 80%;
-    z-index: 1; 
-    position: absolute;
-    right: 200px;
-    top: 150px;
-} */
 /* Bookmark Manager end */
 
 
@@ -571,4 +533,78 @@
 
 #svg-path:hover {
     fill: hsl(0, 94%, 66%);
+}
+/* Mobile */
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .header-btn-login {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-bg {
+        background-color: hsl(231, 69%, 60%);
+        z-index: 0;
+        height: 30%;
+        width: 80%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    
+    .hero-img {
+        max-width: 80%;
+        height: auto;
+        z-index: 1; 
+        position: absolute;
+        top: 50%; 
+        margin-left: 100px; 
+    }
+
+    .features-content {
+       display: flex;
+       flex-direction: column;
+        width: 365px;
+
+    }
+
+    .features-tabs {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .features-tab {
+        width: 365px;
+        margin: auto;    
+        border-top: 1px solid black;
+    }
 }
