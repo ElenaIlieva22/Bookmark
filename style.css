@@ -661,6 +661,44 @@
 
     /* On click */
 
+    .onclick.active {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .onclick-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .onclick-content {
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .onclick-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-right: 0;
+    }
+
+    .onclick-bg {
+        height: 150px;
+        width: 100%;
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+
+    .onclick-img {
+        top: -50px;
+        right: -50px;
+        max-width: 60%;
+    }
+
     /* On click  END*/
 
 
@@ -697,7 +735,7 @@
     }
 
     .install-btn {
-        max-width: 90%; 
+        max-width: 70%; 
         font-size: 14px;
         padding: 8px 16px;
     }
