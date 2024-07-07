@@ -492,6 +492,8 @@
 
 /* Subscribe End */
 
+/* Footer */
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -539,6 +541,10 @@
 #svg-path:hover {
     fill: hsl(0, 94%, 66%);
 }
+
+/* Footer End */
+
+
 /* Mobile */
 
 @media (max-width: 375px) {
@@ -655,15 +661,48 @@
 
     /* On click */
 
+    .onclick.active {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .onclick-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .onclick-content {
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .onclick-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-right: 0;
+    }
+
+    .onclick-bg {
+        height: 150px;
+        width: 100%;
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+
+    .onclick-img {
+        top: -50px;
+        right: -50px;
+        max-width: 60%;
+    }
+
     /* On click  END*/
 
 
     /* Extensions*/
-
-    .extensions-container {
-        padding-top: 50px;
-        margin-bottom: 50px;
-    }
 
     .ext-text {
         font-size: 20px;
@@ -671,13 +710,15 @@
 
     .ext-text p {
         font-size: 14px;
-        max-width: 90%; 
+        max-width: 70%; 
+        margin: 0 auto;
+        text-align: center;
     }
 
     .extensions-inner {
-        max-width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
+        max-width: 80%;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .chrome,
@@ -694,7 +735,7 @@
     }
 
     .install-btn {
-        max-width: 90%; 
+        max-width: 70%; 
         font-size: 14px;
         padding: 8px 16px;
     }
@@ -710,14 +751,15 @@
         padding-top: 50px;
         font-size: 18px;
     }
-
+ 
     .faq-text p {
         font-size: 14px;
         padding-bottom: 30px;
-        max-width: 90%; 
+        max-width: 80%;  
+    } 
 
     .faq-item {
-        width: 100%;
+        width: 90%;
         padding: 0 10px;
     }
 
@@ -733,6 +775,87 @@
     #FAQ-btn {
         font-size: 14px;
     }
-    /* FAQ end */
+   
+ /* FAQ end */
+
+/* Subscribe */
+.subscribe-container {
+    padding: 15px;
 }
+
+.subscribe-inner {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.sub-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.error-message {
+    font-size: 12px;
+}
+
+#error-icon {
+    margin-right: 3px;
+}
+
+#error-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+#email-input.error {
+    border: 2px solid #FA5959;
+}
+
+/* Subscribe end*/
+
+
+/* Footer  */
+.footer {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: ;
+}
+
+.nav-footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-link-footer {
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-icon {
+    padding-left: 0;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* Footer end */
+ 
 }
