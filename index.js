@@ -7,8 +7,21 @@ const firstTab = featurestabs[0];
 function updateUnderline(tab) {
   const rect = tab.getBoundingClientRect();
   const containerRect = tab.parentElement.getBoundingClientRect();
-  divider.style.width = `${rect.width}px`;
-  divider.style.left = `${rect.left - containerRect.left}px`;
+  const isColumnLayout = window.innerWidth <= 680;
+
+  if (isColumnLayout) {
+    divider.style.width = `${rect.width}px`;
+    divider.style.height = "3px";
+    divider.style.left = `${rect.left - containerRect.left}px`;
+    divider.style.top = `${rect.bottom - containerRect.top + 5}px`;
+  } else {
+    divider.style.width = `${rect.width}px`;
+    divider.style.height = "3px";
+    divider.style.left = `${rect.left - containerRect.left}px`;
+    divider.style.top = `${rect.bottom - containerRect.top + 5}px`;
+  }
+
+  divider.classList.add("active");
 }
 
 updateUnderline(firstTab);
@@ -28,31 +41,30 @@ featurestabs.forEach((tab) => {
   });
 });
 
-
 function toggleAnswer(button) {
-  let arrowPath = button.querySelector('.arrow path');
-  
+  let arrowPath = button.querySelector(".arrow path");
+
   if (arrowPath) {
-       arrowPath.parentNode.classList.toggle('rotated');
-      
-      if (arrowPath.getAttribute('stroke') === '#5267DF') {
-          arrowPath.setAttribute('stroke', 'hsl(0, 94%, 66%)');
-      } else {
-          arrowPath.setAttribute('stroke', '#5267DF');
-      }
+    arrowPath.parentNode.classList.toggle("rotated");
+
+    if (arrowPath.getAttribute("stroke") === "#5267DF") {
+      arrowPath.setAttribute("stroke", "hsl(0, 94%, 66%)");
+    } else {
+      arrowPath.setAttribute("stroke", "#5267DF");
+    }
   }
-  
+
   let faqAnswer = button.nextElementSibling;
-  faqAnswer.classList.toggle('faq-answer-show');
+  faqAnswer.classList.toggle("faq-answer-show");
 }
 
 // Mobile version
 
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const nav = document.querySelector('.nav');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const nav = document.querySelector(".nav");
 
-  hamburgerMenu.addEventListener('click', function() {
-      nav.classList.toggle('nav-active');
+  hamburgerMenu.addEventListener("click", function () {
+    nav.classList.toggle("nav-active");
   });
 });
