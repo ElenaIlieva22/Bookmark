@@ -187,7 +187,7 @@
 .divider {
   position: absolute;
   height: 3px;
-  background-color: orange;
+  background-color: hsl(0, 94%, 66%);
   transition: left 0.3s ease, width 0.3s ease;
 }
 /* Features end*/
@@ -497,15 +497,7 @@
 /* Mobile */
 
 @media screen and (max-width: 376px) {
-    /* body {
-        background-color: red;
-    } */
-  /* .container {
-        max-width: 365px;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
+  
   /* Header */
   .header {
     flex-direction: row;
@@ -591,27 +583,30 @@
   /* Features */
   .features {
     padding: 20px 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .features-title {
     font-size: 24px;
+    justify-content: center;
+    display: flex;
   }
 
   .features-content {
     flex-direction: column;
     font-size: 14px;
     margin-bottom: 20px;
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 0px 25px 20px;
+
   }
   .features-tabs {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    gap: 10px;
+    gap: 25px;
   }
   .features-tab {
     width: 200px;
@@ -620,6 +615,13 @@
   /* Features END */
 
   /* On click */
+  .onclick-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 
   .onclick.active {
     display: flex;
