@@ -636,7 +636,6 @@
     display: flex;
     margin: auto;
     flex-direction: column;
-    gap: 20px;
   }
 
   .onclick-title {
@@ -651,6 +650,7 @@
     margin: 0 auto;
     align-items: center;
   }
+  
 
   .onclick-btn {
     font-size: 14px;
@@ -662,23 +662,21 @@
   }
 
   .onclick-picpart {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: auto;
+    justify-content: flex-start;
+    width: 350px;  
   }
 
   .onclick-bg {
     margin-top: 30px;
-    margin-left:-40px;
-    width: 280px;
+    margin-left:-20px;
+    width: 300px;
     height: 200px;
   }
 
-  .onclick-img {
-    max-width: 100%;
+  .onclick-img { 
+    width: 300px;
+    margin-right: 150px;
     margin-top: 100px;
-    margin-right: 80px;
   }
 
   /* On click  END*/
