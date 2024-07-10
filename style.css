@@ -618,17 +618,16 @@ right: 0;
     gap: 10px;
   }
   .features-tab {
-    width: 365px;
+    width: 200px;
     margin: auto;
-    border-top: 1px solid black;
   }
   /* Features END */
+
   /* On click */
 
   .onclick.active {
     margin: auto;
     flex-direction: column;
-
     gap: 20px;
   }
 
@@ -644,12 +643,16 @@ right: 0;
     margin: 0 auto;
     align-items: center;
   }
+
   .onclick-btn {
     font-size: 14px;
     padding: 8px 16px;
     margin: 0 auto;
-    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
   }
+
   .onclick-picpart {
     display: flex;
     width: 100%;
@@ -659,14 +662,15 @@ right: 0;
 
   .onclick-bg {
     margin-top: 30px;
-    width: 300px;
+    margin-left:-40px;
+    width: 280px;
     height: 200px;
   }
 
   .onclick-img {
-    max-width: 85%;
+    max-width: 100%;
     margin-top: 100px;
-    margin-right: 120px;
+    margin-right: 80px;
   }
 
   /* On click  END*/
@@ -705,6 +709,9 @@ right: 0;
     max-width: 70%;
     font-size: 14px;
     padding: 8px 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
   }
   /* Extensions End*/
 
