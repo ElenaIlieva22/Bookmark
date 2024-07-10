@@ -356,7 +356,7 @@
 }
 .faq-container div:nth-last-child(2) {
   border-bottom: 1px solid;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 .faq-text {
   text-align: center;
