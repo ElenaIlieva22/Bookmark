@@ -449,7 +449,6 @@
 /* Subscribe End */
 /* Footer */
 .footer {
-  display: flex;
   flex-direction: row;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -710,7 +709,7 @@
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  }
+  
   /* Extensions End*/
 
   /* FAQ */
