@@ -497,6 +497,10 @@
 /* Mobile */
 
 @media screen and (max-width: 376px) {
+
+  .container {
+    width: 376px;
+  }
   
   /* Header */
   .header {
@@ -586,7 +590,6 @@
 
   /* Features */
   .features {
-    padding: 20px 0;
     margin-bottom: 20px;
   }
 
@@ -597,13 +600,12 @@
   }
 
   .features-content {
+    margin: auto;
     flex-direction: column;
     font-size: 14px;
     margin-bottom: 20px;
-    max-width: 60%;
-    margin: 0 auto;
     text-align: center;
-    padding: 0px 25px 20px;
+    width: 80%;
 
   }
   .features-tabs {
@@ -614,6 +616,9 @@
   }
   .features-tab {
     width: 200px;
+    margin: auto;
+  }
+  .divider {
     margin: auto;
   }
   /* Features END */
