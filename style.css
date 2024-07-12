@@ -84,6 +84,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 300px;
+  margin: auto;
 }
 
 .dropdown-menu ul {
@@ -98,10 +100,16 @@
 }
 
 .dropdown-menu li a {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 15px;
   color: rgb(255, 255, 255);
 }
+
+.drop-close {
+  background-color: rgb(73, 83, 128);
+  border: none;
+}
+
 
 
 /* Header end*/
