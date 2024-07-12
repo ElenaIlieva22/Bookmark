@@ -60,11 +60,25 @@ function toggleAnswer(button) {
 
 // Mobile version
 
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const nav = document.querySelector(".nav");
-
-  hamburgerMenu.addEventListener("click", function () {
-    nav.classList.toggle("nav-active");
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const menu = document.getElementById('dropdownMenu');
+  const nav = document.querySelector('.nav');
+  
+  
+  hamburgerMenu.addEventListener('click', function() {
+      nav.classList.toggle("nav-active");
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   });
+
+ 
+  const dropCloseButton = document.querySelector('.drop-close');
+
+dropCloseButton.addEventListener('click', function(event) {
+    nav.classList.remove("nav-active");
+    menu.style.display = 'none';
 });
+
+  updateUnderline(firstTab);
+});
+
