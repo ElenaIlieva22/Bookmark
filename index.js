@@ -82,3 +82,13 @@ dropCloseButton.addEventListener('click', function(event) {
   updateUnderline(firstTab);
 });
 
+document.querySelectorAll('.dropdown-item li').forEach(item => {
+  item.addEventListener('click', function() {
+      document.querySelectorAll('.dropdown-item li').forEach(li => {
+          li.classList.remove('active');
+      });
+      this.classList.add('active');
+  });
+});
+
+
